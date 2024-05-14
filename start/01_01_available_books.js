@@ -9,6 +9,10 @@ class Book {
     this.numCopies = numCopies;
   }
 
+  get availability() {
+    return this.getAvailability();
+  }
+
   getAvailability() {
     if (this.numCopies == 0) {
       return "out of stock";
